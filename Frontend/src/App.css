@@ -1,0 +1,119 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,html,#root{
+  height: 100%;
+  width: 100%;
+  background-color: #0D1117
+}
+
+.screen{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.screen .left{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex-basis: 50%;
+
+  background-color: #161B22;
+  border-radius: 0.7rem;
+
+  position: relative;
+  padding: 1rem;
+
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.left-header {
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+.left-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #F0F6FC;
+}
+
+.left-header p {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #8B949E;
+}
+
+.screen .left .code{
+  flex: 1;
+  min-height: 0;
+  background-color: #0d1117;
+
+  overflow: auto;
+
+  border-radius: 0.7rem;
+}
+
+.screen .left .code pre,
+.screen .left .code textarea {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+}
+
+
+/* REVIEW BUTTON */
+
+.screen .left .review {
+  align-self: flex-end;
+
+  margin-top: 1rem;
+
+  background-color: #238636;
+  color: white;
+
+  font-weight: 500;
+
+  border-radius: 0.5rem;
+
+  padding: 0.5rem 2rem;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ================= RIGHT PANEL ================= */
+
+.screen .right {
+  height: 100%;
+  flex-basis: 50%;
+  min-width: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background-color: #161B22;
+
+  padding: 1rem;
+
+  border-radius: 0.7rem;
+
+  color: white;
+}
+
+
+
+
